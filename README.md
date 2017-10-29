@@ -28,6 +28,7 @@ $('.collapsed').next('.btn-template').click(function(e){})
 </code>
 <p>А вот эта штука отключает стандартное поведение для ссылок, тоесть не перезагружает страницу если жмакать на ссылку</p>
 <code>e.preventDefault();</code>
+<br>
 А весь магический скрипт шоб оно показывалось и скрывалось вот тута:<br>
 <code>$(this).parent().children('.collapsed').slideToggle();</code>
 тута такая штука.
