@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ededed;
+}
+.menu_row{
+    padding: 50px;
+    padding-top: 30px;
+   .logo_title{
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+    } 
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    &.btn-loadmore{
+        width: auto !important;
+        height: auto !important;
+        padding: 10px 30px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 5000px;
+        background-color: #43be9d;
+        border-bottom: 3px solid #62e3c1;
+        transition: .3s;
+        &:hover{
+            box-shadow: 0px 5px 10px 0px #e2e2e2;
+            background-color: #40b998;
+        }
+    }
+}
+.collapsed{
+    display: none;
+}
+.btn-template{
+    display: inline-block;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #5060d8;
+    color: #fff !important;
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    border-bottom: 3px solid #7c88e5;
+    text-transform: capitalize;
+    text-decoration: none !important;
+    transition: .3s;
+    &:hover{
+        background-color: #7c88e5;
+        
+    }
+}
+article{
+    .btn-template{
+        padding: 7px 25px;
+    }
+}
+header{
+    position: relative;
+    padding: 50px 0px;
+    padding-top: 0;
+    background-color: #2f2f2f;
+    .logo{
+        padding: 50px;
+        h4{
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: bold;
+            color: #de5757;
+            text-align: center;
+        }
+    }
+    .site_title{
+        margin-top: 30px;
+        color: #40e28b;
+        h1{
+            text-transform: uppercase;
+        }
+        p{
+            color: #bfbfbf;
+            font-size: 16px;
+        }
+    }
+}
+main{
+    width: 85%;
+    margin: 50px auto;
+    .loadmore{
+        text-align: center;
+    }
+    .blogpost_container{
+        background-color: #fff;
+        padding: 40px 30px;
+        box-shadow: 0 0 30px 0px #bebebe;
+        article{
+            .h_desc{
+                text-transform: uppercase;
+                font-weight: bold;
+                &:after{
+                    content: '';
+                    display: block;
+                    width: 55px;
+                    height: 4px;
+                    background-color: #525252;
+                    margin: 10px 0px;
+                }
+            }
+            .stat{
+                margin-bottom: 15px;
+                span{
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 14px;
+                    i{
+                        color: #de5757;
+                    }
+                }
+            }
+            img{
+                max-height: 450px;
+            }
+            .info{
+                margin-bottom: 15px;
+                p{
+                    font-size: 16px;
+                    color: #989898;
+                }
+            }
+            .article_footer{
+                padding:15px 0px;
+                border-top: 1px solid #eaeaea;
+                border-bottom: 1px solid #eaeaea;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            &:after{
+                content: '';
+                display: block;
+                width: 50%;
+                margin: 0px auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    aside{
+        .aside_container{
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 30px 0px #bebebe;
+        }
+        .widget{
+            .widget_header{
+                padding: 7px 0px;
+                font-size: 16px;
+                text-transform: uppercase;font-weight: bold;
+                border-bottom: 2px solid #40b998;
+            }
+            &.tag_cloud{
+                ul{
+                    padding:10px 5px;
+                    li{
+                        padding: 0;
+                        margin-right: 5px;
+                        a{
+                            display: block;
+                            background-color: #5c6ad6;
+                            color: #fff;
+                            margin-bottom: 5px;
+                            padding:1px 3px;
+                            
+                            border-radius: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
